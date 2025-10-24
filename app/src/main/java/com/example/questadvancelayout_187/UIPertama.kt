@@ -2,6 +2,7 @@ package com.example.questadvancelayout_187
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -53,6 +54,19 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
         )
 
         Spacer(modifier = Modifier.height(12.dp))
+
+        Row(
+            modifier = Modifier.padding(vertical = 8.dp),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SocialIcon(R.drawable.facebook)
+            SocialIcon(R.drawable.instagram)
+            SocialIcon(R.drawable.github)
+            SocialIcon(R.drawable.linkedin)
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
 
         Text(
             text = "Irfan Afifuddin",
