@@ -98,5 +98,12 @@ fun CardMenuItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title: S
             .height(60.dp),
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = Color(0xFF2A2A2A))
-    )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 20.dp),
+            verticalAlignment = Alignment.CenterVertically
+        )
+    }
 }
