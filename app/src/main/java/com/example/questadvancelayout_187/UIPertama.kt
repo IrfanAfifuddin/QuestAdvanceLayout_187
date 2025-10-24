@@ -147,7 +147,10 @@ fun SocialIcon(iconRes: Int) {
         Image(
             painter = painterResource(id = iconRes),
             contentDescription = null,
-            modifier = Modifier.padding(8.dp)
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxSize()
+                .clip(CircleShape)
         )
     }
 }
