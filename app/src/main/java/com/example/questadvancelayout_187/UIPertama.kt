@@ -81,6 +81,13 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
         Spacer(modifier = Modifier.weight(1f))
 
         Text(
+            text = "copyright, 2025",
+            color = Color.Gray,
+            fontSize = 12.sp,
+            modifier = Modifier.padding(bottom = 12.dp)
+        )
+
+        Text(
             stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold,
