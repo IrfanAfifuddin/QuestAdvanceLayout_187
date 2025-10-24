@@ -1,6 +1,7 @@
 package com.example.questadvancelayout_187
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -26,18 +27,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ActivitasPertama(modifier: Modifier){
+fun ActivitasPertama(modifier: Modifier = Modifier){
     Column (
         modifier = Modifier
-            .padding(top = 100.dp)
-            .fillMaxSize(),
+            .fillMaxSize()
+            .background(Color(0xFF0C0C0C))
+            .padding(horizontal = 24.dp, vertical = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-//        Text(
-//            text = stringResource(id = R.string.prodi),
-//            fontSize = 35.sp,
-//            fontweight = FontWeight.Bold
-//        )
         Text(
             stringResource(R.string.prodi),
             fontSize = 35.sp,
