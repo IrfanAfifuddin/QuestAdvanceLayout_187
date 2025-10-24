@@ -51,6 +51,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
             fontWeight = FontWeight.Bold
         )
         Text(
+            text = "@apiippxn",
+            color = Color.Gray,
+            fontSize = 14.sp
+        )
+        Text(
             stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold,
