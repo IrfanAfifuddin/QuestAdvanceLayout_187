@@ -25,6 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -57,6 +58,15 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
         )
 
         Spacer(modifier = Modifier.height(8.dp))
+
+        Text(
+            text = "Saya seorang Mahasiswa Teknologi Informasi",
+            color = Color.White,
+            fontSize = 14.sp,
+            textAlign = TextAlign.Center
+        )
+
+        Spacer(modifier = Modifier.height(32.dp))
 
         Text(
             stringResource(R.string.prodi),
