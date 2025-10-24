@@ -45,6 +45,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
                 .clip(CircleShape)
         )
         Text(
+            text = "Irfan Afifuddin",
+            color = Color.White,
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
             stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold,
