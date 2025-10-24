@@ -14,7 +14,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.ReceiptLong
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -68,10 +70,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
             textAlign = TextAlign.Center
         )
 
+        Spacer(modifier = Modifier.height(32.dp))
+
         CardMenuItem(icon = Icons.Default.Lock, title = "Privacy")
         Spacer(modifier = Modifier.height(12.dp))
-
-        Spacer(modifier = Modifier.height(32.dp))
+        CardMenuItem(icon = Icons.Default.ReceiptLong, title = "Riwayat Transaksi")
+        Spacer(modifier = Modifier.height(12.dp))
 
         Text(
             stringResource(R.string.prodi),
