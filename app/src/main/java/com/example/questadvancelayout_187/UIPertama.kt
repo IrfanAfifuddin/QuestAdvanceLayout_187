@@ -44,7 +44,8 @@ fun ActivitasPertama(modifier: Modifier){
         )
         Text(
             stringResource(R.string.univ),
-            fontSize = 22.sp
+            fontSize = 22.sp,
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card(
