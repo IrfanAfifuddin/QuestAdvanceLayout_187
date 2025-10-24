@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material.icons.filled.Lock
@@ -90,6 +91,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
 }
 
 @Composable
-fun CardMenuItem(icon: Lock, title: String) {
-    TODO("Not yet implemented")
+fun CardMenuItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title: String) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(60.dp),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFF2A2A2A))
+    )
 }
