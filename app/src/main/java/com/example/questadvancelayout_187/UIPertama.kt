@@ -51,6 +51,9 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
                 .size(120.dp)
                 .clip(CircleShape)
         )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
         Text(
             text = "Irfan Afifuddin",
             color = Color.White,
@@ -117,5 +120,20 @@ fun CardMenuItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title: S
                 style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Medium)
             )
         }
+    }
+}
+
+@Composable
+fun SocialIcon(iconRes: Int) {
+    Card(
+        shape = CircleShape,
+        colors = CardDefaults.cardColors(containerColor = Color(0xFF1E1E1E)),
+        modifier = Modifier.size(36.dp)
+    ) {
+        Image(
+            painter = painterResource(id = iconRes),
+            contentDescription = null,
+            modifier = Modifier.padding(8.dp)
+        )
     }
 }
