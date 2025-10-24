@@ -106,6 +106,7 @@ fun CardMenuItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title: S
                 contentDescription = null,
                 tint = Color.White
             )
+            Spacer(modifier = Modifier.width(16.dp))
         }
     }
 }
