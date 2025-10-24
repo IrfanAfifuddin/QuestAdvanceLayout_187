@@ -17,6 +17,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.ReceiptLong
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -76,6 +77,8 @@ fun ActivitasPertama(modifier: Modifier = Modifier){
         Spacer(modifier = Modifier.height(12.dp))
         CardMenuItem(icon = Icons.Default.ReceiptLong, title = "Riwayat Transaksi")
         Spacer(modifier = Modifier.height(12.dp))
+        CardMenuItem(icon = Icons.Default.Settings, title = "Pengaturan")
+        Spacer(modifier = Modifier.weight(1f))
 
         Text(
             stringResource(R.string.prodi),
